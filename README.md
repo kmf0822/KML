@@ -1,11 +1,11 @@
 # KML
 <br>
 "KML.html"是參考<br>
------ https://www.youtube.com/watch?v=MMGjaLpdgaQ<br>
+https://www.youtube.com/watch?v=MMGjaLpdgaQ<br>
 影片中的code，並將kmlUrl替換成"01 出生.kml"<br>
 <br>
 "googlemaps_KML.html"是參考<br>
------ https://developers.google.com/maps/tutorials/kml/<br>
+https://developers.google.com/maps/tutorials/kml/<br>
 中的tutorials，並將src替換成"01 出生.kml"<br>
 
 
