@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>01出生.kml</name>
+	<Style id="sh_icon_temp">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<Style id="sh_icon_temp0">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="msn_icon_temp">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_icon_temp3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_icon_temp3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_icon_temp">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<Style id="sn_donut0">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>0</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/donut.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<Style id="sh_icon_temp1">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="msn_icon_temp0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_icon_temp1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_icon_temp0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_icon_temp1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_icon_temp2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_icon_temp1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_icon_temp2">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/camera.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="msn_donut0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_donut0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_donut</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_icon_temp0">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/camera.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="msn_icon_temp2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_icon_temp</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_icon_temp</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_donut10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_donut10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_donut10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_donut10">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>5</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/donut.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+			<scale>1.2</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<Style id="sn_icon_temp1">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<Style id="sn_icon_temp2">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="msn_icon_temp3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_icon_temp0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_icon_temp2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_icon_temp3">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<Style id="sh_icon_temp3">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff0000ff</color>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<Style id="sh_donut10">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>6</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/donut.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ffff</color>
+			<scale>1.2</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<Folder>
+		<name>01出生</name>
+		<StyleMap id="msn_none">
+			<Pair>
+				<key>normal</key>
+				<styleUrl>#sn_none</styleUrl>
+			</Pair>
+			<Pair>
+				<key>highlight</key>
+				<styleUrl>#sh_none</styleUrl>
+			</Pair>
+		</StyleMap>
+		<Folder>
+			<name>事件</name>
+			<Placemark>
+				<name>出生</name>
+				<description><![CDATA[<table width="400"> <img src="file:///D:\Excel2Earth/files/1866國父故居.jpg" width="380" > </br></br>
+出生, 1866,11,12。</br><br>孫中山誕生於廣東省香山縣之翠亨村，背犁頭山，三個臨海，距縣城五十四餘里，距澳門七十四餘里。居民百餘戶，業四漁或經商。由於負山瀕海，地多砂磧，不利於耕，故鄉人多遊賈於四方。
+</br></br><b>其他照片：</b></br>
+<description><![CDATA[<table width="400"> <img src="file:///D:\Excel2Earth/files/1866國父故居書房.jpg" width="380" >
+1866國父故居書房</br></br>
+<description><![CDATA[<table width="400"> <img src="https://ceiba.ntu.edu.tw/course/b90b75/files/孫中山故居模型.jpg" width="380" >
+孫中山故居模型</br></br>
+<description><![CDATA[<table width="400"> <img src="https://ceiba.ntu.edu.tw/course/b90b75/files/孫中山故居空照圖.jpg" width="380" >
+孫中山故居空照圖</br></br>]]></description>
+				<TimeStamp><when>1866-11-12</when>
+</TimeStamp>
+				<styleUrl>#msn_icon_temp3</styleUrl>
+				<StyleMap id="msn_icon_temp3">
+					<Pair>
+						<key>normal</key>
+						<styleUrl>#sn_icon_temp0</styleUrl>
+					</Pair>
+					<Pair>
+						<key>highlight</key>
+						<styleUrl>#sh_icon_temp2</styleUrl>
+					</Pair>
+				</StyleMap>
+				<Point>
+					<coordinates>113.526469376228,22.4400902649008,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>兄德影赴檀香山</name>
+				<description><![CDATA[兄德影赴檀香山, 1871。</br><br>孫中山兄長德彰，時年十八，時楊太夫人有弟文納經商檀香山，因事歸國，乃託其挈以赴檀，售田數畝為旅費，後德彰乃在海外建立基業。]]></description>
+				<TimeStamp><when>1871</when>
+</TimeStamp>
+				<styleUrl>#msn_icon_temp2</styleUrl>
+				<StyleMap id="msn_icon_temp2">
+					<Pair>
+						<key>normal</key>
+						<styleUrl>#sn_icon_temp</styleUrl>
+					</Pair>
+					<Pair>
+						<key>highlight</key>
+						<styleUrl>#sh_icon_temp</styleUrl>
+					</Pair>
+				</StyleMap>
+				<Point>
+					<coordinates>114,22.4400902649008,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>受業台山王氏</name>
+				<description><![CDATA[受業台山王氏, 1875。</br><br>孫中山十歲始入鄉塾讀書，塾設本鄉陸氏祖祠，即陸皓東之祖祠，塾師為台山王氏，鄉人呼為蟝王，教讀頗嚴，教以四書五經。]]></description>
+				<TimeStamp><when>1875</when>
+</TimeStamp>
+				<styleUrl>#msn_icon_temp1</styleUrl>
+				<StyleMap id="msn_icon_temp1">
+					<Pair>
+						<key>normal</key>
+						<styleUrl>#sn_icon_temp2</styleUrl>
+					</Pair>
+					<Pair>
+						<key>highlight</key>
+						<styleUrl>#sh_icon_temp1</styleUrl>
+					</Pair>
+				</StyleMap>
+				<Point>
+					<coordinates>115,22.4400902649008,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>轉入鄭帝根塾</name>
+				<description><![CDATA[轉入鄭帝根塾, 1876。</br><br>台山王氏因病逝世，先生轉入鄭帝根塾中就讀。後又受業於程步瀛(君海)先生。]]></description>
+				<TimeStamp><when>1876</when>
+</TimeStamp>
+				<styleUrl>#msn_icon_temp</styleUrl>
+				<StyleMap id="msn_icon_temp">
+					<Pair>
+						<key>normal</key>
+						<styleUrl>#sn_icon_temp3</styleUrl>
+					</Pair>
+					<Pair>
+						<key>highlight</key>
+						<styleUrl>#sh_icon_temp3</styleUrl>
+					</Pair>
+				</StyleMap>
+				<Point>
+					<coordinates>116,22.4400902649008,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<description><![CDATA[1866,11,12~1879,06,01。</br><br>]]></description>
+				<TimeSpan>
+					<begin>1866-11-12</begin>
+					<end>1879-06</end>
+				</TimeSpan>
+				<styleUrl>#msn_icon_temp0</styleUrl>
+				<StyleMap id="msn_icon_temp0">
+					<Pair>
+						<key>normal</key>
+						<styleUrl>#sn_icon_temp1</styleUrl>
+					</Pair>
+					<Pair>
+						<key>highlight</key>
+						<styleUrl>#sh_icon_temp0</styleUrl>
+					</Pair>
+				</StyleMap>
+				<Point>
+					<coordinates>117,22.4400902649008,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>地名</name>
+			<StyleMap id="msn_donut0">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#sn_donut0</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#sh_donut</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Placemark>
+				<name>翠亨村</name>
+				<styleUrl>#msn_donut0</styleUrl>
+				<Point>
+					<coordinates>118,22.4400902649008,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>翠亨村, 4584</name>
+				<description><![CDATA[翠亨村, 1866-11-12T~1879-06-01T，停留時間：4584</br>]]></description>
+				<styleUrl>#msn_donut10</styleUrl>
+				<Point>
+					<coordinates>119,22.4400902649008,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>路徑</name>
+			<Folder>
+				<name>翠亨村</name>
+			</Folder>
+		</Folder>
+	</Folder>
+</Document>
+</kml>
