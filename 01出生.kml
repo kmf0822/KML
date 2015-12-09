@@ -338,7 +338,7 @@
 					</Pair>
 				</StyleMap>
 				<Point>
-					<coordinates>114,22.4400902649008,0</coordinates>
+					<coordinates>113.526469376228,22.4400902649008,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
@@ -358,7 +358,7 @@
 					</Pair>
 				</StyleMap>
 				<Point>
-					<coordinates>115,22.4400902649008,0</coordinates>
+					<coordinates>113.526469376228,22.4400902649008,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
@@ -378,7 +378,7 @@
 					</Pair>
 				</StyleMap>
 				<Point>
-					<coordinates>116,22.4400902649008,0</coordinates>
+					<coordinates>113.526469376228,22.4400902649008,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
@@ -399,7 +399,7 @@
 					</Pair>
 				</StyleMap>
 				<Point>
-					<coordinates>117,22.4400902649008,0</coordinates>
+					<coordinates>113.526469376228,22.4400902649008,0</coordinates>
 				</Point>
 			</Placemark>
 		</Folder>
@@ -419,7 +419,7 @@
 				<name>翠亨村</name>
 				<styleUrl>#msn_donut0</styleUrl>
 				<Point>
-					<coordinates>118,22.4400902649008,0</coordinates>
+					<coordinates>113.526469376228,22.4400902649008,0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
@@ -427,7 +427,7 @@
 				<description><![CDATA[翠亨村, 1866-11-12T~1879-06-01T，停留時間：4584</br>]]></description>
 				<styleUrl>#msn_donut10</styleUrl>
 				<Point>
-					<coordinates>119,22.4400902649008,0</coordinates>
+					<coordinates>113.526469376228,22.4400902649008,0</coordinates>
 				</Point>
 			</Placemark>
 		</Folder>
