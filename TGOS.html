@@ -1,48 +1,35 @@
 <!DOCTYPE html>
-
 <html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>Getting Start TGOS MAP</title>
+		<script type="text/javascript" src="http://api.tgos.nat.gov.tw/TGOS_API/tgos?ver=2&AppID=GawoMOpJkg8baVD1kOf5N9LRVRecIslXMBiRdu3hMHIlmBuFY9k4Pg==&APIKey=cGEErDNy5yN/1fQ0vyTOZrghjE+jIU6uwBFx58WYjJQP3Q/a4oJQ9+la4UDKUvW1mFmbdUt15ni62uwHCC3w7RutTleAmL1UTD7U9qC+o0SgxcoIADqZ4p+UJ8uq0KHJHMUPkvlweaq6+bmn1RTKsl8kq7yf6rJw9sgFdg0XVzI6HRXNNY35c1pgsPC65eIuSjlrvIicHoHnhThkS6YSA3EMmOmblVw4cwhYnubkwh7ytsBtFyOwfPdxjRsgdH5Q1taWLUIV1Dha3Ft4ol/1Z9yGkwujuahF0JteziiVL6N7TqYEJdS6BNB1CzqbBN8j/qs3U24wzYqAsOuqS02Ryu63ZkUvRiBb" charset="utf-8"></script>
 
-<head>
+		<!-- ---APPID
+		GawoMOpJkg8baVD1kOf5N9LRVRecIslXMBiRdu3hMHIlmBuFY9k4Pg==
 
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-
-<title>Getting Start TGOS MAP</title>
-
-<script type="text/javascript" src="http://api.tgos.nat.gov.tw/TGOS_API/tgos?ver=2&AppID=GawoMOpJkg8baVD1kOf5N9LRVRecIslXMBiRdu3hMHIlmBuFY9k4Pg==&APIKey=cGEErDNy5yN/1fQ0vyTOZrghjE+jIU6uwBFx58WYjJQP3Q/a4oJQ9+la4UDKUvW1mFmbdUt15ni62uwHCC3w7RutTleAmL1UTD7U9qC+o0SgxcoIADqZ4p+UJ8uq0KHJHMUPkvlweaq6+bmn1RTKsl8kq7yf6rJw9sgFdg0XVzI6HRXNNY35c1pgsPC65eIuSjlrvIicHoHnhThkS6YSA3EMmOmblVw4cwhYnubkwh7ytsBtFyOwfPdxjRsgdH5Q1taWLUIV1Dha3Ft4ol/1Z9yGkwujuahF0JteziiVL6N7TqYEJdS6BNB1CzqbBN8j/qs3U24wzYqAsOuqS02Ryu63ZkUvRiBb" charset="utf-8"></script>
-
-<!-- ---APPID
-GawoMOpJkg8baVD1kOf5N9LRVRecIslXMBiRdu3hMHIlmBuFY9k4Pg==
-
----APIKey
-cGEErDNy5yN/1fQ0vyTOZrghjE+jIU6uwBFx58WYjJQP3Q/a4oJQ9+la4UDKUvW1mFmbdUt15ni62uwHCC3w7RutTleAmL1UTD7U9qC+o0SgxcoIADqZ4p+UJ8uq0KHJHMUPkvlweaq6+bmn1RTKsl8kq7yf6rJw9sgFdg0XVzI6HRXNNY35c1pgsPC65eIuSjlrvIicHoHnhThkS6YSA3EMmOmblVw4cwhYnubkwh7ytsBtFyOwfPdxjRsgdH5Q1taWLUIV1Dha3Ft4ol/1Z9yGkwujuahF0JteziiVL6N7TqYEJdS6BNB1CzqbBN8j/qs3U24wzYqAsOuqS02Ryu63ZkUvRiBb -->
-
-<script type="text/javascript">
-
-function InitWnd() {
-
-var pOMap = document.getElementById("TGMap");
-
-var pMap = new TGOS.TGOnlineMap(pOMap, TGOS.TGCoordSys.EPSG3826);
-
-<!-- alert(pMap.getBounds());  //取出地圖的邊框Envelope物件 -->
- 
-pMap.fitBounds(new TGOS.TGEnvelope(280127.4588798692, 2767577.737906828,
-350067.04221320245, 2688183.987906828));
-//傳入Envelope物件以設定地圖的邊框範圍
-pMap.setZoom(7);  //指定地圖層級
-
-}
-
-</script>
-
-</head>
-
-<body style="margin: 0px" onload="InitWnd();">
-
-<div id="TGMap" style="width: 800px; height: 600px; border: 1px solid #C0C0C0;">
-
-</div>
-
-</body>
-
+		---APIKey	cGEErDNy5yN/1fQ0vyTOZrghjE+jIU6uwBFx58WYjJQP3Q/a4oJQ9+la4UDKUvW1mFmbdUt15ni62uwHCC3w7RutTleAmL1UTD7U9qC+o0SgxcoIADqZ4p+UJ8uq0KHJHMUPkvlweaq6+bmn1RTKsl8kq7yf6rJw9sgFdg0XVzI6HRXNNY35c1pgsPC65eIuSjlrvIicHoHnhThkS6YSA3EMmOmblVw4cwhYnubkwh7ytsBtFyOwfPdxjRsgdH5Q1taWLUIV1Dha3Ft4ol/1Z9yGkwujuahF0JteziiVL6N7TqYEJdS6BNB1CzqbBN8j/qs3U24wzYqAsOuqS02Ryu63ZkUvRiBb -->
+		<script type="text/javascript">
+			var pMap = null;
+			function InitWnd() {
+				var pOMap = document.getElementById("TGMap");
+				pMap = new TGOS.TGOnlineMap(pOMap, TGOS.TGCoordSys.EPSG3826);
+				<!-- alert(pMap.getBounds());  //取出地圖的邊框Envelope物件 -->
+				//pMap.fitBounds(new TGOS.TGEnvelope(280127.4588798692, 2767577.737906828,350067.04221320245, 2688183.987906828));
+				//傳入Envelope物件以設定地圖的邊框範圍
+				//pMap.setZoom(3);  //指定地圖層級
+				var kmlLayer = new TGOS.TGKmlLayer('https://github.com/kmf0822/KML/raw/master/taipei.kmz', {
+					map: pMap,
+					suppressInfoWindows: false,
+					preserveViewport: true
+				}, function() {
+					var meta = kmlLayer.getMetadata();
+				});
+			}
+		</script>
+	</head>
+	<body style="margin: 0px" onload="InitWnd();">
+		<div id="TGMap" style="width: 800px; height: 600px; border: 1px solid #C0C0C0;">
+		</div>
+	</body>
 </html>
