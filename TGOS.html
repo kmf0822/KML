@@ -14,6 +14,7 @@
 			function InitWnd() {
 				var pOMap = document.getElementById("TGMap");
 				pMap = new TGOS.TGOnlineMap(pOMap, TGOS.TGCoordSys.EPSG3826);
+				pMap.setCenter(new TGOS.TGPoint(25.068950, 121.640239));
 				<!-- alert(pMap.getBounds());  //取出地圖的邊框Envelope物件 -->
 				//pMap.fitBounds(new TGOS.TGEnvelope(280127.4588798692, 2767577.737906828,350067.04221320245, 2688183.987906828));
 				//傳入Envelope物件以設定地圖的邊框範圍
