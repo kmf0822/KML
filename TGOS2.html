@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<title>TGOS MAP API for Web 主題圖磚</title>
+	<script type="text/javascript" src="http://api.tgos.nat.gov.tw/TGOS_API/tgos?ver=2&AppID=GawoMOpJkg8baVD1kOf5N9LRVRecIslXMBiRdu3hMHIlmBuFY9k4Pg==&APIKey=cGEErDNy5yN/1fQ0vyTOZrghjE+jIU6uwBFx58WYjJQP3Q/a4oJQ9+la4UDKUvW1mFmbdUt15ni62uwHCC3w7RutTleAmL1UTD7U9qC+o0SgxcoIADqZ4p+UJ8uq0KHJHMUPkvlweaq6+bmn1RTKsl8kq7yf6rJw9sgFdg0XVzI6HRXNNY35c1pgsPC65eIuSjlrvIicHoHnhThkS6YSA3EMmOmblVw4cwhYnubkwh7ytsBtFyOwfPdxjRsgdH5Q1taWLUIV1Dha3Ft4ol/1Z9yGkwujuahF0JteziiVL6N7TqYEJdS6BNB1CzqbBN8j/qs3U24wzYqAsOuqS02Ryu63ZkUvRiBb" charset="utf-8"></script>
+<script type="text/javascript"> 
+var pMap = null;
+function InitWnd() {
+	var pOMap = document.getElementById("TGMap");
+	var mapOptions = {
+		mapTypeControl: false	//mapTypeControl(關閉地圖類型控制項)
+	};
+	pMap = new TGOS.TGOnlineMap(pOMap, TGOS.TGCoordSys.EPSG3826, mapOptions);	//宣告TGO nlineMap地圖物件並設定坐標系統
+}
+var TileLayer = null;
+var TileType;
+function AddTile() {
+	if (TileLayer) {		//如圖面上已經存在主題圖磚圖層，則在切換新的圖磚之前先行移除舊主題圖磚
+		TileLayer.removeTileOverlay(TileType);
+	}
+	var bounds = pMap.getBounds();			//取得目前地圖圖面邊界值
+	TileLayer = new TGOS.TGTileOverlay();	//宣告主題圖磚物件
+	var req = {								//設定主題圖磚需求參數
+		scaleLevel:0,						//地圖層級
+		left:parseFloat(bounds.left),		//圖磚需求範圍邊界
+		top:parseFloat(bounds.top),
+		right:parseFloat(bounds.right),
+		bottom:parseFloat(bounds.bottom),
+		map: pMap,							//套疊目標地圖
+		overlay: true						//是否套疊主題圖磚
+	};
+	
+	if (document.getElementById("TileList").value == 1) {			//取得下拉選單的值
+		TileType= TGOS.TGMapServiceId.CITYZONING;					//依照取得值來指定主題圖磚的種類
+		document.getElementById("legend").innerHTML = "<img src='http://api.tgos.nat.gov.tw/TGOS_API/ThemeLegend/CITYZONING.jpg' title='都市計畫圖'/>";
+	} else if (document.getElementById("TileList").value == 2) {
+		TileType= TGOS.TGMapServiceId.RURALZONING;
+		document.getElementById("legend").innerHTML = "<img src='http://api.tgos.nat.gov.tw/TGOS_API/ThemeLegend/RURALZONING.jpg' title='非都市土地使用分區圖'/>";
+	} else if (document.getElementById("TileList").value == 3) {
+		TileType= TGOS.TGMapServiceId.LANDUSE;
+		document.getElementById("legend").innerHTML = "<img src='http://api.tgos.nat.gov.tw/TGOS_API/ThemeLegend/LANDUSE.png' title='國土利用調查'/>";
+	} else {
+		TileType= TGOS.TGMapServiceId.TOPO1000;
+	}
+	TileLayer.getThemeTile(TileType, req, 0.7, function(){});		//取得主題圖磚進行套疊, 並設定透明度
+}
+</script>            
+</head>
+<body style="margin:0px" onload="InitWnd();">
+<table>
+<tr>
+<td>
+	<div id="TGMap" style="width:640px; height:480px; border: 1px solid #C0C0C0;"></div>
+</td>
+<td>
+	<div id="legend"></div>
+</td>
+</tr>
+</table>
+<!--建立下拉選單, 提供預設三組圖磚服務-->
+<select id="TileList">
+	<option value=1>都市計畫圖</option>
+	<option value=2>非都市土地使用分區圖</option>
+	<option value=3>國土利用調查</option>
+	<option value=4>一千分之一地形圖</option>
+</select>
+<input type="button" value="加入主題圖磚" onclick="AddTile();">
+</html>
